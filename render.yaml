@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: research-portal
+    runtime: node
+    repo: https://github.com/your-username/research-portal
+    plan: free
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+    buildCommand: npm install
+    startCommand: npm start
