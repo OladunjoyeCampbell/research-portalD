@@ -1,0 +1,15 @@
+# Node
+node_modules/
+.env
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Session store (if using file)
+connect_pg_simple_sessions
+
+# Local SQLite (if any)
+*.sqlite
+*.db
